@@ -2,7 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
 const app = express();
-const port = process.env.PORT || 3003;
+// const port = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 app.use(cors());
 app.use(express.json());
