@@ -1,0 +1,54 @@
+REACT CLASS COMPONENT
+
+class Stateful extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  componentDidMount() {
+    const { count } = this.state;
+    document.title = `You've clicked ${count} times.`;
+  }
+
+  componentDidUpdate() {
+    const { count } = this.state;
+    document.title = `You've clicked ${count} times.`;
+  }
+
+  render() {
+    const { count } = this.state;
+    return (
+      <div>
+        <p>You've clicked {count} times.</p>
+        <button onClick={() => this.setState({ count: count + 1 })}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+}
+REACT FUNCTIONAL COMPONENT
+import React, { useState, useEffect } from "react";
+
+const UsingHooks = () => {
+  const [count, setCount] = useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You've clicked ${count} times.`;
+  });
+
+  return (
+    // <> is a short syntax for <React.Fragment> and can be used instead of a wrapping div
+    <>
+      <p>You've clicked {count} times.</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </>
+  );
+}
