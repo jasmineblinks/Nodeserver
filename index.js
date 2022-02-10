@@ -34,8 +34,8 @@ const productData = [
   {
     id: uuidv4(),
     image:
-      "https://images.pexels.com/photos/3602449/pexels-photo-3602449.jpeg?cs=srgb&dl=pexels-bella-zhong-3602449.jpg&fm=jpg",
-    title: "Beautiful",
+      "https://res.cloudinary.com/pueneh/video/upload/v1644492254/vxc3hagq16yhn7xbw4lr.webm",
+    title: "Georgous",
     product:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     content:
@@ -67,7 +67,7 @@ const productData = [
   {
     id: uuidv4(),
     image:
-      "https://images.pexels.com/photos/6050917/pexels-photo-6050917.jpeg?cs=srgb&dl=pexels-ox-street-6050917.jpg&fm=jpg",
+      "https://res.cloudinary.com/pueneh/video/upload/v1644492406/abbheghcd8lygupljwp6.webm",
     title: "Beautiful",
     product:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
